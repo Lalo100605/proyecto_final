@@ -23,78 +23,152 @@
     <div id="main-content">
         <nav>
             <div class="nav-bg"></div>
-            <a href="#" class="active">Trabajar</a>
-            <a href="#">Acerca de</a>
+
+            <!-- 🔥 BOTÓN TRABAJAR YA FUNCIONA -->
+            <a href="#" class="active" onclick="showSection('home-section')">Trabajar</a>
+
+            <a href="#" onclick="showSection('about-section')">Acerca de</a>
             <a href="#">Jugar</a>
             <a href="#">Notas</a>
             <a href="#" id="contact-link">Contacto</a>
         </nav>
 
-        <div class="hero">
-            <div class="star left">✦</div>
-            <h1>Hi. I'm Eduardo.<br>A Engineer.</h1>
-            <div class="star right">✦</div>
-            <p>I'm passionate about creating new alternatives to solve problems.</p>
+        <!-- SECCIÓN HOME -->
+        <div id="home-section">
+            <div class="hero">
+                <div class="star left">✦</div>
+                <h1>Hi. I'm Eduardo.<br>A Engineer.</h1>
+                <div class="star right">✦</div>
+                <p>I'm passionate about creating new alternatives to solve problems.</p>
+            </div>
+
+            <section class="cards">
+                <div class="card purple">
+                    <p class="card-subtitle">AYUDA AL EXPLORADOR</p>
+                    <h2 class="card-title">IA</h2>
+                    <img src="https://www.stackscale.com/wp-content/uploads/2023/02/Inteligencia-Artificial-Stackscale.jpg"
+                        alt="IA" />
+                </div>
+
+                <div class="card cyan">
+                    <p class="card-subtitle">AYUDA AL EXPLORADOR</p>
+                    <h2 class="card-title">Artículos</h2>
+                    <img src="https://thumbs.dreamstime.com/b/old-newspaper-design-vector-template-vintage-retro-background-text-images-77345579.jpg"
+                        alt="Artículos" />
+                </div>
+            </section>
+
+            <section class="cards inverted">
+                <div class="card peach">
+                    <h3 class="card-subtitle">FIGMA</h3>
+                    <h2 class="card-title">Complementos</h2>
+                    <img src="https://i.blogs.es/ad88b1/asfdasf/450_1000.jpeg" alt="Complementos">
+                </div>
+
+                <div class="card blue">
+                    <h3 class="card-subtitle">AYUDA AL EXPLORADOR</h3>
+                    <h2 class="card-title">Móvil</h2>
+                    <img src="https://images.ctfassets.net/63bmaubptoky/55A4dLyCC8yLI0dVFktJfT/46e1ba430b1e83147bd3eead08c0ca4b/comercio-movil-en-Mexico-MX-Capterra-header.png"
+                        alt="Móvil">
+                </div>
+            </section>
+
+            <section class="progress-section">
+                <h2><span>En</span> progreso.</h2>
+                <p>
+                    Aplicar conocimientos en sistemas computacionales para el diseño y desarrollo
+                    de soluciones a diversos desafíos tecnológicos.
+                </p>
+            </section>
+
+            <div class="cards third-row">
+                <div class="card cream">
+                    <h3 class="card-subtitle">MULTIJUGADOR</h3>
+                    <h2 class="card-title">Garabateador</h2>
+                    <img src="https://www.truevalueinfosoft.com/assets/img/blog/the-importance-of-uiux-design-in-web-and-mobile-development.jpg"
+                        alt="Garabateador" />
+                </div>
+
+                <div class="card dark">
+                    <h3 class="card-subtitle">FIGMA</h3>
+                    <h2 class="card-title">Gota</h2>
+                    <img src="https://play-lh.googleusercontent.com/hoVBnPBRehmXsCqESLXRH2E3OTxklkwKZlb1psn7imm0VUSobn2nevS9RRFWb9GM4-o=w240-h480-rw"
+                        alt="Gota" />
+                </div>
+            </div>
         </div>
 
-        <!-- SECCIÓN CARDS -->
-        <section class="cards">
-            <div class="card purple">
-                <p class="card-subtitle">AYUDA AL EXPLORADOR</p>
-                <h2 class="card-title">IA</h2>
-                <img src="https://www.stackscale.com/wp-content/uploads/2023/02/Inteligencia-Artificial-Stackscale.jpg"
-                    alt="IA" />
-            </div>
+        <!-- ============= SECCIÓN ACERCA DE ============== -->
+        <section id="about-section" class="hidden">
+            <div class="about-container">
+                <h1 class="about-title">I'm Eduardo.</h1>
 
-            <div class="card cyan">
-                <p class="card-subtitle">AYUDA AL EXPLORADOR</p>
-                <h2 class="card-title">Artículos</h2>
-                <img src="https://thumbs.dreamstime.com/b/old-newspaper-design-vector-template-vintage-retro-background-text-images-77345579.jpg"
-                    alt="Artículos" />
+                <div class="about-content">
+                    <div class="about-photo">
+                        <img src="https://img.freepik.com/fotos-premium/retrato-personaje-dibujos-animados-3d-joven-gafas-sudadera-pixarstyle-rendering_1297251-21394.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="Tu foto">
+                    </div>
+
+                    <div class="about-text">
+                        <h2 class="about-heading">
+                            I'm a Systems Engineer working remotely from México.
+                        </h2>
+
+                        <p>
+                            I focus on creating smart and efficient technological solutions, blending engineering,
+                            creativity and real-world problem solving.
+                        </p>
+
+                        <p>
+                            I enjoy working on AI, automation, UI/UX, and system optimization. My goal is to develop
+                            tools that help people and improve how technology interacts with everyday life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- EXPERIENCIA PROFESIONAL -->
+            <div class="experience-wrapper">
+                <div class="xp-card xp1">
+                    <div class="xp-left">
+                        <h3>Cubic</h3>
+                        <p>Design / Dev</p>
+                    </div>
+                    <div class="xp-right">7–10</div>
+                </div>
+
+                <div class="xp-card xp2">
+                    <div class="xp-left">
+                        <h3>Dotfusion</h3>
+                        <p>Design / Dev</p>
+                    </div>
+                    <div class="xp-right">10–14</div>
+                </div>
+
+                <div class="xp-card xp3">
+                    <div class="xp-left">
+                        <h3>Freelance</h3>
+                        <p>Design Consultant</p>
+                    </div>
+                    <div class="xp-right">12~</div>
+                </div>
+
+                <div class="xp-card xp4">
+                    <div class="xp-left">
+                        <h3>Help Scout</h3>
+                        <p>Senior Product Designer</p>
+                    </div>
+                    <div class="xp-right">15–23</div>
+                </div>
+
+                <div class="xp-card xp5">
+                    <div class="xp-left">
+                        <h3>GiveDirectly</h3>
+                        <p>Senior Product Designer</p>
+                    </div>
+                    <div class="xp-right">22~</div>
+                </div>
             </div>
         </section>
-
-        <!-- Fila 2 -->
-        <section class="cards inverted">
-            <div class="card peach">
-                <h3 class="card-subtitle">FIGMA</h3>
-                <h2 class="card-title">Complementos</h2>
-                <img src="https://i.blogs.es/ad88b1/asfdasf/450_1000.jpeg" alt="Complementos">
-            </div>
-
-            <div class="card blue">
-                <h3 class="card-subtitle">AYUDA AL EXPLORADOR</h3>
-                <h2 class="card-title">Móvil</h2>
-                <img src="https://images.ctfassets.net/63bmaubptoky/55A4dLyCC8yLI0dVFktJfT/46e1ba430b1e83147bd3eead08c0ca4b/comercio-movil-en-Mexico-MX-Capterra-header.png"
-                    alt="Móvil">
-            </div>
-        </section>
-
-        <!-- Sección "En progreso" -->
-        <section class="progress-section">
-            <h2><span>En</span> progreso.</h2>
-            <p>
-                Aplicar conocimientos en sistemas computacionales para el diseño y desarrollo
-                de soluciones a diversos desafíos tecnológicos.
-            </p>
-        </section>
-
-        <!-- ===== TERCER FILA DE CARDS ===== -->
-        <div class="cards third-row">
-            <div class="card cream">
-                <h3 class="card-subtitle">MULTIJUGADOR</h3>
-                <h2 class="card-title">Garabateador</h2>
-                <img src="https://www.truevalueinfosoft.com/assets/img/blog/the-importance-of-uiux-design-in-web-and-mobile-development.jpg"
-                    alt="Garabateador" />
-            </div>
-
-            <div class="card dark">
-                <h3 class="card-subtitle">FIGMA</h3>
-                <h2 class="card-title">Gota</h2>
-                <img src="https://play-lh.googleusercontent.com/hoVBnPBRehmXsCqESLXRH2E3OTxklkwKZlb1psn7imm0VUSobn2nevS9RRFWb9GM4-o=w240-h480-rw"
-                    alt="Gota" />
-            </div>
-        </div>
 
         <!-- FOOTER -->
         <footer>
@@ -107,12 +181,10 @@
                 </div>
             </div>
 
-            <!-- BOTÓN DE MODO -->
             <button id="mode-toggle">
                 <span id="mode-icon">🌙</span>
             </button>
 
-            <!-- BARRA DE SEGMENTOS -->
             <div class="footer-bar" id="footer-bar"></div>
         </footer>
     </div>
@@ -152,6 +224,8 @@
         const fillEl = document.getElementById("fill");
         const loader = document.getElementById("loader");
         const main = document.getElementById("main-content");
+        const homeSection = document.getElementById("home-section");
+
         const heroTitle = document.querySelector(".hero h1");
         const heroText = document.querySelector(".hero p");
         const footerBar = document.getElementById("footer-bar");
@@ -159,7 +233,18 @@
         const modeIcon = document.getElementById("mode-icon");
         let darkMode = true;
 
-        // --- ANIMACIÓN DEL LOADER ---
+        const aboutSection = document.getElementById("about-section");
+
+        /* ----- CAMBIAR DE SECCIÓN ----- */
+        function showSection(sectionId) {
+            homeSection.classList.add("hidden");
+            aboutSection.classList.add("hidden");
+
+            document.getElementById(sectionId).classList.remove("hidden");
+            window.scrollTo(0, 0);
+        }
+
+        /* ----- LOADER ----- */
         const interval = setInterval(() => {
             percent += 1;
             percentEl.textContent = percent + "%";
@@ -175,7 +260,7 @@
             }
         }, 50);
 
-        // --- CAMBIO AUTOMÁTICO DE IDIOMA ---
+        /* -- IDIOMA -- */
         const texts = [
             {
                 title: "Hi. I'm Eduardo.<br>A Engineer.",
@@ -201,7 +286,7 @@
             }, 1000);
         }, 10000);
 
-        // --- SEGMENTOS DE BARRA ---
+        /* ----- COLORES FOOTER ----- */
         const colorsDark = ["#173a2d", "#204a3a", "#265344", "#2d5b4f", "#336359"];
         const colorsLight = ["#f2e5cc", "#f1e7c8", "#efe9c5", "#edeac1", "#ebecbe", "#e8edba", "#e6efb6", "#e3f1b3", "#dff2b0", "#dbf4ac", "#d7f6a8"];
         const allColors = [...colorsDark, ...colorsLight, ...colorsDark.slice(0, 8)];
@@ -213,18 +298,20 @@
             footerBar.appendChild(segment);
         }
 
-        // --- MODO OSCURO / CLARO ---
+        /* ----- MODO OSCURO/CLARO ----- */
         modeToggle.addEventListener("click", () => {
             darkMode = !darkMode;
             document.body.classList.toggle("light-mode", !darkMode);
             modeIcon.textContent = darkMode ? "🌙" : "☀️";
         });
 
-        // --- POPUP DE CHAT ---
+        /* ----- CHAT ----- */
         const contactLink = document.getElementById("contact-link");
         const contactFooter = document.getElementById("contact-footer");
         const chatPopup = document.getElementById("chat-popup");
         const closeChat = document.getElementById("close-chat");
+        const chatBody = document.querySelector(".chat-body");
+        const talkButton = document.querySelector(".chat-options button:nth-child(2)");
 
         function openChat() {
             chatPopup.classList.add("show");
@@ -240,12 +327,7 @@
         contactFooter.addEventListener("click", openChat);
         closeChat.addEventListener("click", closePopup);
 
-        // --- MENSAJE AUTOMÁTICO DEL BOT ---
-        const chatBody = document.querySelector(".chat-body");
-        const talkButton = document.querySelector(".chat-options button:nth-child(2)");
-
         talkButton.addEventListener("click", () => {
-            // Mensaje del Usuario
             const userMsg = document.createElement("div");
             userMsg.classList.add("message", "user");
             userMsg.textContent = "Solo quiero hablar contigo!";
@@ -254,7 +336,6 @@
 
             document.querySelector(".chat-options").style.display = "none";
 
-            // Respuesta del bot
             setTimeout(() => {
                 const botMsg = document.createElement("div");
                 botMsg.classList.add("message", "bot");
@@ -264,6 +345,7 @@
             }, 1000);
         });
     </script>
+
 </body>
 
 </html>

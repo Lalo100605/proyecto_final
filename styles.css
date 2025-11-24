@@ -49,14 +49,14 @@ body {
     display: none;
     opacity: 0;
     min-height: 100vh;
-    background: radial-gradient(circle at 20% 30%, rgba(110, 5, 5, 0.81), transparent 55%),
-        radial-gradient(circle at 80% 70%, rgba(255, 221, 87, 0.35), transparent 60%),
+    background: radial-gradient(circle at 20% 30%, rgba(104, 52, 25, 0.81), transparent 55%),
+        radial-gradient(circle at 80% 70%, rgba(255, 149, 87, 0.35), transparent 60%),
         radial-gradient(circle at 30% 80%, rgba(255, 140, 66, 0.35), transparent 60%),
-        radial-gradient(circle at 70% 20%, rgba(239, 62, 151, 0.35), transparent 55%),
+        radial-gradient(circle at 70% 20%, rgba(196, 10, 103, 0.532), transparent 55%),
         radial-gradient(circle at 50% 50%, rgba(14, 68, 58, 1), rgba(10, 30, 25, 1) 80%);
     background-size: 250% 250%;
     animation: rainbowWaves 14s ease-in-out infinite alternate;
-    color: #b6f3e4;
+    color: #f3d8b6;
     text-align: center;
     transition: opacity 1s ease;
     overflow-x: hidden;
@@ -93,7 +93,7 @@ nav {
     gap: 35px;
     padding: 10px 25px;
     font-size: 16px;
-    background: linear-gradient(90deg, #6b6759, #325347);
+    background: linear-gradient(90deg, #6b6759, #534532);
     border-radius: 30px;
     width: fit-content;
     margin: 30px auto;
@@ -107,7 +107,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #d7efe4;
+    color: #efdfd7;
     font-weight: 600;
     transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -118,7 +118,7 @@ nav a:hover {
 }
 
 nav a.active {
-    color: #bafee1;
+    color: #fedeba;
 }
 
 @media (max-width: 1024px) {
@@ -173,7 +173,7 @@ nav a.active {
     font-size: 5rem;
     line-height: 1.1;
     font-weight: 700;
-    color: #9ef5ce;
+    color: #ad8e75;
     animation: fadeInUp 1.5s ease forwards;
     transition: opacity 0.7s ease;
 }
@@ -181,7 +181,7 @@ nav a.active {
 .hero p {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #e0fef7;
+    color: #c29d88;
     max-width: 600px;
     opacity: 0;
     animation: fadeIn 2s ease 0.5s forwards;
@@ -192,14 +192,14 @@ nav a.active {
 .star {
     position: absolute;
     font-size: clamp(2.5rem, 5vw, 6rem);
-    color: #e0fff9;
+    color: #ffede0;
     opacity: 0;
     animation: fadeIn 2s ease forwards;
 }
 
 .star.left {
-    top: 60%;
-    left: 15%;
+    top: 70%;
+    left: 20%;
     animation-delay: 1s;
 }
 
@@ -221,7 +221,7 @@ nav a.active {
     padding-bottom: 80px;
 }
 
-/* --- Segundas Cards --- */
+/* --- Second Cards --- */
 .cards.second-row {
     margin-top: 1px;
     padding-bottom: 120px;
@@ -310,7 +310,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px 0 10px;
-    color: #b6f3e4;
+    color: #f3ceb6;
 }
 
 .footer-content {
@@ -323,7 +323,7 @@ footer {
 }
 
 .footer-links a {
-    color: #b6f3e4;
+    color: #f3d8b6;
     margin-left: 15px;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -335,7 +335,7 @@ footer {
 
 /* --- Boton Modo --- */
 #mode-toggle {
-    background: #b6f3e4;
+    background: #f3c4b6;
     border: none;
     width: 50px;
     height: 50px;
@@ -368,12 +368,12 @@ footer {
 
 /* --- Modo claro --- */
 body.light-mode #main-content {
-    background: linear-gradient(180deg, #f5f0d0, #cde3b0);
-    color: #113a28;
+    background: linear-gradient(180deg, #e2c4b3, #b49084);
+    color: #3a2111;
 }
 
 body.light-mode nav a {
-    color: #20382c;
+    color: #e7d2b7;
 }
 
 body.light-mode nav a:hover {
@@ -381,31 +381,31 @@ body.light-mode nav a:hover {
 }
 
 body.light-mode .hero h1 {
-    color: #227657;
+    color: #764822;
 }
 
 body.light-mode .hero p {
-    color: #2e3d33;
+    color: #3d382e;
 }
 
 body.light-mode .star {
-    color: #a6d9c0;
+    color: #d9c3a6;
 }
 
 body.light-mode footer {
-    color: #204433;
+    color: #443420;
 }
 
 body.light-mode .footer-links a {
-    color: #204433;
+    color: #443220;
 }
 
 body.light-mode .footer-links a:hover {
-    color: #0c1c15;
+    color: #1c0f0c;
 }
 
 body.light-mode #mode-toggle {
-    background: #23483a;
+    background: #483723;
     color: #fff;
 }
 
@@ -426,11 +426,11 @@ body.light-mode .card.blue {
 }
 
 body.light-mode .card-subtitle {
-    color: #2e3d33;
+    color: #3d392e;
 }
 
 body.light-mode .card-title {
-    color: #204433;
+    color: #443020;
 }
 
 /* --- Animaciones --- */
@@ -456,7 +456,6 @@ body.light-mode .card-title {
     }
 }
 
-/* --- Responsive --- */
 @media (max-width: 992px) {
     .cards {
         flex-direction: column;
@@ -508,10 +507,9 @@ body.light-mode .card-title {
 body.light-mode .progress-section h2,
 body.light-mode .progress-section h2 span,
 body.light-mode .progress-section p {
-    color: #204433;
+    color: #442b20;
 }
 
-/* --- Responsive --- */
 @media (max-width: 992px) {
     .progress-section {
         padding: 100px 8%;
@@ -606,7 +604,7 @@ body.light-mode .card.dark {
 }
 
 .chat-header {
-  background: #074b3f;
+  background: #4b2707;
   color: white;
   padding: 15px;
   display: flex;
@@ -669,8 +667,8 @@ body.light-mode .card.dark {
 }
 
 .message.bot {
-  background: #ebf8f2;
-  color: #074b3f;
+  background: #f8efeb;
+  color: #4b2907;
   align-self: flex-start;
 }
 
@@ -683,9 +681,9 @@ body.light-mode .card.dark {
 }
 
 .chat-options button {
-  border: 2px solid #074b3f;
+  border: 2px solid #4b2f07;
   background: transparent;
-  color: #074b3f;
+  color: #4b2907;
   border-radius: 40px;
   padding: 8px 15px;
   font-size: 14px;
@@ -694,12 +692,12 @@ body.light-mode .card.dark {
 }
 
 .chat-options button:hover {
-  background: #074b3f;
+  background: #4b2607;
   color: white;
 }
 
 .message.user {
-  background: #074b3f;
+  background: #4b3107;
   color: white;
   align-self: flex-end;
   border-bottom-right-radius: 0;
@@ -709,7 +707,7 @@ body.light-mode .card.dark {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #074b3f;
+  background: #4b2e07;
   border-radius: 50%;
   margin-left: 4px;
   animation: typingDots 1s infinite;
@@ -764,7 +762,6 @@ body.light-mode .card.dark {
   background: #999;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .chat-popup {
     right: 10px;
@@ -887,7 +884,7 @@ body.light-mode .card.dark {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #00594d;
+    background: #592a00;
     color: white;
     padding: 22px 35px;
     border-radius: 50px;
@@ -972,7 +969,6 @@ body.light-mode .card.dark {
     transform: scale(1.05);
 }
 
-/* ===== RESPONSIVO ===== */
 @media (max-width: 992px) {
     .about-extra-images {
         flex-direction: column;
@@ -1010,7 +1006,7 @@ body.light-mode .card.dark {
     margin-bottom: 20px;
 
     display: inline-block;
-    background: linear-gradient(90deg, #5bb39a, #2f7d6c); 
+    background: linear-gradient(90deg, #e9a888, #ad8062); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1117,7 +1113,7 @@ body.light-mode .card.dark {
     transition: 0.2s;
 }
 
-/* SECCIÓN NOTES */
+/* ---- SECCIÓN NOTES ---- */
 .notes-page {
     padding-top: 160px !important;
     padding-bottom: 120px;
@@ -1226,7 +1222,7 @@ body.light-mode .card.dark {
     50% { border-color: var(--text-color); }
 }
 
-/* ------ Popup ------ */
+/* ----- Popup ----- */
 .popup {
     position: fixed;
     inset: 0;
